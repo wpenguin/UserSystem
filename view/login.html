@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Loging</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<a href="index.php">
+			<span id="return" class="btn">
+				return
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</a>
+		<div class="login">
+			<h2>Login</h2>
+			<form action="login.php" method="post">
+				<div class="item">
+					<input type="text" id="username" name="username" required="required">
+					<label for="">UserName</label>
+					<span id="tUsername" class="t">
+						<?php if(!empty($usernameerror)): ?>
+							<?php foreach($usernameerror as $v) echo "$v"; ?>
+						<?php endIf; ?>
+					</span>
+				</div>
+				<div class="item">
+					<input type="password" id="password" name="password" required="required">
+					<label for="">PassWord</label>
+					<span id="tPassword" class="t">
+						<?php if(!empty($passworderror)): ?>
+							<?php foreach($passworderror as $v) echo "$v"; ?>
+						<?php endIf; ?>
+					</span>
+				</div>
+				<div id="remember" class="btn">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<input type="checkbox" id="auto_login" name="auto_login" value="on"/>
+					<label id="rbme" for="">Remember&nbsp;&nbsp;&nbsp;&nbsp;Me</label>
+				</div>
+				<div id="verification_code" class="item">
+					<input type="text" id="code" name="captcha" required="required" />
+					<label for="">VerificationCode</label> 
+					<span id="tCode" class="t">
+						<?php if(!empty($codeerror)): ?>
+							<?php foreach($codeerror as $v) echo "$v"; ?>
+						<?php endIf; ?>
+					</span>
+				</div>
+				<img src="verification_code.php" id="code_img"/>
+				<div id="code_box">
+					<a href="#" id="change"><p>看 换不 一清 张</p></a>
+				</div>
+				<button id="login" type="submit" class="btn">
+					login
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a href="regist.php">
+					<span id="regist" class="btn">
+						regist
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+			</form>
+		</div>
+		<?php if(!empty($error)): ?>
+			<div id="error_box" class="btn">我裂开，登录失败了：
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<br />
+				<?php foreach($error as $v) echo "<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$v<br>"; ?>
+			</div>
+		<?php endIf; ?>
+	</body>
+</html>

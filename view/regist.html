@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Registing</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/regist.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<script src="js/regist.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<a href="index.php">
+			<span id="return" class="btn">
+				return
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</a>
+		<div class="regist">
+			<h2>Regist</h2>
+			<form action="regist.php" id="submit" method="post">
+				<div class="item">
+					<input type="text" id="username" name="username" required="required">
+					<label for="">UserName</label>
+					<span id="tUsername" class="t">
+						<?php if(!empty($usernameError)): ?>
+							<?php foreach($usernameError as $v) echo "$v<br />"; ?>
+						<?php endIf; ?>
+					</span>
+				</div>
+				<div class="item">
+					<input id="password" type="password" name="password" required="required">
+					<label for="">PassWord</label>
+					<span id="tPassword" class="t">
+						<?php if(!empty($passwordError)): ?>
+							<?php foreach($passwordError as $v) echo "$v"; ?>
+						<?php endIf; ?>
+					</span>
+				</div>
+				<div class="item">
+					<input id="pwdConfirmation" type="password" required="required">
+					<label for="">PassWord</label>
+					<span id="tPwdConfirmation" class="t"></span>
+				</div>
+				<div class="item">
+					<input type="text" id="phone" name="phone" required="required">
+					<label for="">Phone</label>
+					<span id="tPhone" class="t">
+						<?php if(!empty($phoneError)): ?>
+							<?php foreach($phoneError as $v) echo "$v"; ?>
+						<?php endIf; ?>
+					</span>
+				</div>
+				<button id="login" type="button" class="btn">
+					regist
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a href="login.php">
+					<span id="regist" class="btn">
+						now-login
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+			</form>
+		</div>
+		<span id="tError" class="btn">
+			<?php if(!empty($error)): ?>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				注册失败：<br />
+				<?php foreach($error as $v) echo "<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$v<br />"; ?>
+			<?php endIf; ?>
+		</span>
+	</body>
+</html>

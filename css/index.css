@@ -1,0 +1,168 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 1215.35px;
+	height: 480px;
+	margin: -100px auto;
+}
+.box_top{
+	width: 1215.35px;
+	height: 20%;
+	background: #33AAFF;
+	line-height: 96px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-size: 40px;
+	color: #fff;
+}
+.box_bottom{
+	width: 1206.35px;
+	height: 80%;
+	border: 5px solid #666;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top: 0px;
+}
+.box_bottom_left{
+	height: 100%;
+	width: 240px;
+	float: left;
+	background: #DDDDDD;
+	border-right: 5px solid #666;
+}
+.box_bottom_right{
+	height: 100%;
+	width: 960px;
+	position: relative;
+	float: left;
+}
+.box_bottom_right table{
+	margin: 50px auto auto;
+}
+.box_bottom_right th{
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+.box_bottom_right td{
+	text-align: center;
+	height: 36px;
+}
+.box_bottom_right td span{
+	width: 220px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:block;
+	white-space:nowrap;
+}
+.userpage{
+	width: 220px;
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+}
+.userpage a{
+	margin-left: 8px;
+}
+.itempage{
+	width: 220px;
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+}
+.itempage a{
+	margin-left: 8px;
+}
+ul{
+	list-style: none;
+}
+.box_bottom_left li{
+	text-align: center;
+	padding-top: 24px;
+	width: 100%;
+	height: 10%;
+	background: #fff;
+	border-bottom: 2px solid #000;
+	border-radius: 15px;
+}
+.box_bottom_left li:hover{
+	background-color: #BBBBBB;
+	cursor: pointer;
+}
+.box_bottom_right a{
+	text-decoration: none;
+	color: #000;
+}
+#sakurapicture{
+	width: 20px;
+	height: 20px;
+}
+#productpicture{
+	width: 80px;
+}
+
+
+
+
+
+/*top*/
+#top{
+	height: 176px;
+	width: 100%;
+}
+#top_head{
+	width: 100%;
+	height: 35px;
+	background: #e3e4e5;
+}
+#top_head_box{
+	width: 80%;
+	margin: 0 auto;
+}
+#top_head_box ul{
+	float: right;
+	list-style: none;
+	margin: 6px 8px auto;
+}
+.a{
+	text-decoration: none;
+	color: #999;
+	margin-right: 0px;
+}
+.l{
+	margin: 10px 10px auto;
+	color: #999;
+}
+.a:hover{
+	color: #e33333;
+	transition: 1.5s;
+}
+#unlogin{
+	text-align: center;
+	line-height: 370px;
+	font-size: 30px;
+}
+#logining form{
+	width: 330px;
+	height: 300px;
+	text-align: center;
+	margin: auto;
+}
+#logining form input{
+	width: 250px;
+	height: 30px;
+	margin-top: 20px;
+}
+.tbody input{
+	border: 0px;
+}
+.order td{
+	height: 70px;
+}
+.submit:hover{
+	background: #666666;
+	cursor: pointer;
+}

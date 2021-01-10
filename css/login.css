@@ -1,0 +1,73 @@
+.login {
+    width: 420px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 15px 25px 0 rgba(0, 0, 0, .6);
+    padding: 40px;
+    position: absolute;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#regist {
+	float: right;
+	margin-right: 19px;
+}
+#login {
+	margin-left: 19px;
+}
+#return {
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+#error_box{
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	right: 160px;
+}
+#remember{
+	height: 16px;
+	text-align: center;
+}
+#auto_login{
+	position: absolute;
+	left: 20px;
+	top: 13px;
+}
+.t{
+	font-size: 20px;
+	color: #fff;
+}
+#verification_code{
+	width: 180px;
+	top: 18px;
+}
+#code_img{
+	width: 96px;
+	position: absolute;
+	top: 322px;
+	left: 235px;
+}
+#code_box{
+	width: 10px;
+	height: 50px;
+	position: absolute;
+	left: 340px;
+	top: 320px;
+	text-align: center;
+}
+p{
+	font-size: 15px;
+	width: 40px;
+	top: 5px;
+	left: 5px;
+	position: absolute;
+}
+#change{
+	color: #fff;
+}
+#change:hover{
+	color: #E33333;
+	transition: 1.5s;
+}
